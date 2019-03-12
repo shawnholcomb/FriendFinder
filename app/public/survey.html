@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Superhero FriendFinder</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Neucha|Open+Sans+Condensed:300" rel="stylesheet">
+    <link rel="stylesheet" href="/style">
+</head>
+
+<body>
+    <div class="container survey">
+        <h2 class="my-3 font-weight-bold">Survey Questions</h2>
+        <hr class="my-4">
+        <h4 class="font-weight-bold">About You</h4>
+        <h5>Name (Required)</h5>
+        <input type="text" id="name" class="form-control mb-4">
+        <h5>Link to Photo Image (Required)</h5>
+        <input type="text" id="photo" class="form-control">
+        <hr class="my-4">
+        <div class="row">
+            <div class="col-6">
+                <h4>Question 1</h4>
+                <h5 class="font-weight-bold">Physical strength is very important to me.
+                </h5>
+                <select class="mb-4" id="q1">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <h4>Question 2</h4>
+                <h5 class="font-weight-bold">I would like a friend who can fly.
+                </h5>
+                <select class="mb-4" id="q2">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <h4>Question 3</h4>
+                <h5 class="font-weight-bold">I prefer an urban environment to a rural environment.
+                </h5>
+                <select class="mb-4" id="q3">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <h4>Question 4</h4>
+                <h5 class="font-weight-bold">I am interested in technology and computers.
+                </h5>
+                <select class="mb-4" id="q4">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <h4>Question 5</h4>
+                <h5 class="font-weight-bold">Magic is real and fascinating.
+                </h5>
+                <select class="mb-4" id="q5">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+            <div class="col-6">
+                <h4>Question 6</h4>
+                <h5 class="font-weight-bold">I am frightened of aliens and extraterrestrials.
+                </h5>
+                <select class="mb-4" id="q6">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <h4>Question 7</h4>
+                <h5 class="font-weight-bold">It is easier to befriend females than it is males.
+                </h5>
+                <select class="mb-4" id="q7">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <h4>Question 8</h4>
+                <h5 class="font-weight-bold">I consider myself virtuous.
+                </h5>
+                <select class="mb-4" id="q8">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <h4>Question 9</h4>
+                <h5 class="font-weight-bold">I like to party.
+                </h5>
+                <select class="mb-4" id="q9">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+                <h4>Question 10</h4>
+                <h5 class="font-weight-bold">I prefer someone more mellow than excitable.</h5>
+                <select class="mb-4" id="q10">
+                    <option></option>
+                    <option>1 (Strongly Disagree)</option>
+                    <option>2</option>
+                    <option>3</option>
+                    <option>4</option>
+                    <option>5 (Strongly Agree)</option>
+                </select>
+            </div>
+        </div>
+        <button type="submit" value="submit" class="btn-block survey-button" id="submit"><i
+                class="far fa-check-circle"></i> Submit</button>
+        <hr>
+        <footer class="mb-4">
+            <a href="/api/friends">API Friends List</a> |
+            <a href="/github">GitHub Repo</a>
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
+        <script src="script.js"></script>
+
+    </div>
+</body>
+
+</html>
