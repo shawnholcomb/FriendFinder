@@ -10,7 +10,8 @@ h2,
 h3,
 h4,
 h5,
-h6 {
+h6,
+button {
     font-family: 'Open Sans Condensed', sans-serif;
 }
 
@@ -49,4 +50,8 @@ h6 {
     margin-top: 0;
     background: #fff;
     padding: 10px 15px;
+}
+
+#match-image {
+    width: 100%;
 }

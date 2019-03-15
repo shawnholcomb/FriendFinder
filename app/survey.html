@@ -31,8 +31,7 @@
                 <h5 class="font-weight-bold">Physical strength is very important to me.
                 </h5>
                 <select class="mb-4" id="q1">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -42,8 +41,7 @@
                 <h5 class="font-weight-bold">I would like a friend who can fly.
                 </h5>
                 <select class="mb-4" id="q2">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -53,8 +51,7 @@
                 <h5 class="font-weight-bold">I prefer an urban environment to a rural environment.
                 </h5>
                 <select class="mb-4" id="q3">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -64,8 +61,8 @@
                 <h5 class="font-weight-bold">I am interested in technology and computers.
                 </h5>
                 <select class="mb-4" id="q4">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -75,8 +72,8 @@
                 <h5 class="font-weight-bold">Magic is real and fascinating.
                 </h5>
                 <select class="mb-4" id="q5">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -88,8 +85,7 @@
                 <h5 class="font-weight-bold">I am frightened of aliens and extraterrestrials.
                 </h5>
                 <select class="mb-4" id="q6">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -99,8 +95,7 @@
                 <h5 class="font-weight-bold">It is easier to befriend females than it is males.
                 </h5>
                 <select class="mb-4" id="q7">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -110,8 +105,7 @@
                 <h5 class="font-weight-bold">I consider myself virtuous.
                 </h5>
                 <select class="mb-4" id="q8">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -121,8 +115,7 @@
                 <h5 class="font-weight-bold">I like to party.
                 </h5>
                 <select class="mb-4" id="q9">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -131,8 +124,7 @@
                 <h4>Question 10</h4>
                 <h5 class="font-weight-bold">I prefer someone more mellow than excitable.</h5>
                 <select class="mb-4" id="q10">
-                    <option></option>
-                    <option value="1">1</option>1 (Strongly Disagree)</option>
+                    <option value="1">1 (Strongly Disagree)</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
                     <option value="4">4</option>
@@ -147,10 +139,28 @@
             <a href="/api/friends">API Friends List</a> |
             <a href="https://github.com/shawnholcomb/FriendFinder">GitHub Repo</a>
         </footer>
+        <div class="modal fade" id="results" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Best Match</h5>
+                        <button type="button" class="close" data-dismiss="modal">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <h2 id="match-name"></h2>
+                        <img id="match-image">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
+        <script src="http://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
             integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
             crossorigin="anonymous"></script>
