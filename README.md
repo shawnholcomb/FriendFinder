@@ -2,7 +2,7 @@
 
 # Superhero Friend Finder
 
-![Home Page](http://i68.tinypic.com/2ng7uj8.png)
+![Home Page](http://i67.tinypic.com/15rku9i.png)
 
 # Description
 
