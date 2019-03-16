@@ -16,4 +16,4 @@ HTML, CSS, Javacript, Bootstrap, JQuery, Node.js, Express.js and hosted via Hero
 
 # Deployed Site
 
-https://shawnholcomb.github.io/FriendFinder
+https://superhero-ff.herokuapp.com/
