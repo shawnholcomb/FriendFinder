@@ -47,7 +47,6 @@ $('#submit').on("click", function () {
     }
 
     $.post("/api/friends", newFriend, function (data) {
-      console.log(data);
       $("#match-name").text(data.name);
       $("#match-image").attr("src", data.photo);
       $("#results").modal()
